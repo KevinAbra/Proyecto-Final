@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link real="stylesheet" href="style.css">     
+    </head>
+<style>
+  *{box-sizing:border-box;}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="correo"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form button{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+</style>
+<body>
+
+<center><h1>Registro de Contactos </h1></center>
+<div id="app">
+<form action="#" target="" method="get" >
+  <label for="nombre"><b>Nombre: </b></label><br>
+  <input id="name" type="text" ><br>
+
+  <label for="celular"><b>Celular: </b></label><br>
+  <input id="celular" type="text" ><br>
+
+  <label for="correo"><b>Correo: </b></label><br>
+  <input id="correo" type="text" ><br>
+
+  <label for="edad"><b>Edad: </b></label><br>
+  <input id="edad" type="text" ><br>
+
+  <label for="activo"><b>Activo: </b></label><br>
+  <input id="activo" type="text" ><br>
+
+  <label for="dependientes"><b>Dependientes: </b> </label><br>
+  <input id="dependientes" type="text" ><br><br>
+
+  <button type="button" id="btnDepen">Añadir Dependientes</button><br><br>
+  <div id="depen"></div>
+  <button type="button" id="btnAdd">Añadir</button>
+</form>
+<div id="infoaña"></div><br>
+<div>
+<select id="contactos"></select>
+<button type="button" id="btnMore">Listar</button>
+<div id="infolist"></div>
+</div>
+</div>
+<script src="app2.js"></script>
+</body>
+</html>
